@@ -1,13 +1,13 @@
 <p align="center">
   <!-- Replace with ./media/sync-banner.png -->
   <img
-    src="https://placehold.co/1920x480/07110F/5EE6BC?text=SYNC+%E2%80%94+AGENTIC+CRYPTO+INTELLIGENCE"
+    src="https://github.com/Saitarun994/SYNC/blob/main/media/banner.png"
     width="100%"
     alt="SYNC — Agentic Crypto Intelligence"
   >
 </p>
 
-<h1 align="center">SYNC — Agentic Crypto Intelligence</h1>
+<h1 align="center">SYNC - Agentic Crypto Intelligence</h1>
 
 <p align="center">
   <strong>LIVE ON-CHAIN RESEARCH · MULTI-AGENT AUTOMATION · SOCIAL INTELLIGENCE</strong>
