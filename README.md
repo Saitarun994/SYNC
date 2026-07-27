@@ -371,27 +371,43 @@ Sentry monitoring with custom error codes tracked agent failures, backend except
 
 ---
 
-## PRODUCT AND WORKFLOW PREVIEW
+## PRODUCT PREVIEW
 
 <p align="center">
-  <!-- Replace with ./media/sync-product-collage.png -->
   <img
-    src="https://placehold.co/1600x900/07110F/5EE6BC?text=SANITIZED+PRODUCT+AND+WORKFLOW+SHOWCASE"
+    src="./media/3.jpg"
     width="100%"
-    alt="Sanitized SYNC product and workflow showcase"
+    alt="Product preview"
   >
 </p>
-
-> Interfaces and outputs shown here should be sanitized, recreated, or explicitly approved for portfolio use.
-
-A future collage can include:
-
-- Sanitized chat interactions
-- Onboarding screens
-- Workflow configuration
-- Agent-status interfaces
-- Anonymized research outputs
-- A simplified request-to-agent execution sequence
+<p align="center">
+  <img
+    src="./media/4.jpg"
+    width="100%"
+    alt="Product preview"
+  >
+</p>
+<p align="center">
+  <img
+    src="./media/6.jpg"
+    width="100%"
+    alt="Product preview"
+  >
+</p>
+<p align="center">
+  <img
+    src="./media/7.jpg"
+    width="100%"
+    alt="Product preview"
+  >
+</p>
+<p align="center">
+  <img
+    src="./media/8.jpg"
+    width="100%"
+    alt="Product preview"
+  >
+</p>
 
 ---
 
