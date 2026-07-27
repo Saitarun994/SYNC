@@ -115,7 +115,7 @@ The supervisor selected the correct specialist, extracted tool arguments, reques
 
 <p align="center">
   <img
-    src="./media/sync-overall-architecture.png"
+    src="./media/arch1.png"
     width="100%"
     alt="SYNC overall system architecture"
   >
@@ -129,7 +129,7 @@ A single homogeneous FastAPI application combined the supervisor, eight speciali
 
 <p align="center">
   <img
-    src="./media/sync-agent-orchestration.png"
+    src="./media/arch2.png"
     width="100%"
     alt="SYNC multi-agent orchestration and tool connections"
   >
@@ -143,7 +143,7 @@ The supervisor classified each request, extracted arguments, and routed work to 
 
 <p align="center">
   <img
-    src="./media/sync-desktop-cloud-deployment.png"
+    src="./media/arch3.png"
     width="100%"
     alt="SYNC private desktop and cloud deployment architecture"
   >
