@@ -109,53 +109,49 @@ The supervisor selected the correct specialist, extracted tool arguments, reques
 
 ## SYSTEM ARCHITECTURE
 
+## SYSTEM ARCHITECTURE
+
+### 1. Overall System Architecture
+
 <p align="center">
-  <!-- Replace with ./media/sync-architecture.png -->
   <img
-    src="https://placehold.co/1600x900/07110F/5EE6BC?text=SYNC+SYSTEM+ARCHITECTURE+DIAGRAM"
+    src="./media/sync-overall-architecture.png"
     width="100%"
-    alt="SYNC multi-agent architecture diagram"
+    alt="SYNC overall system architecture"
   >
 </p>
 
-The production design used an **8-agent, three-tier architecture**.
+A single homogeneous FastAPI application combined the supervisor, eight specialist agents, LangGraph workflows, tool registries, memory, automation, monitoring, model providers, and external data integrations.
 
-### Tier 1 — Supervisor
+---
 
-Responsible for:
+### 2. Multi-Agent Orchestration & Tool Connections
 
-- Intent detection
-- Agent routing
-- Argument extraction
-- Missing-input collection
-- Workflow coordination
-- Shared search operations
-- Final-response assembly
+<p align="center">
+  <img
+    src="./media/sync-agent-orchestration.png"
+    width="100%"
+    alt="SYNC multi-agent orchestration and tool connections"
+  >
+</p>
 
-### Tier 2 — Specialist agents
+The supervisor classified each request, extracted arguments, and routed work to one or more specialist agents. Each agent maintained its own prompt, tools, workflow state, and LangGraph execution path before results were validated and synthesized.
 
-Specialists handled:
+---
 
-- Blockchain analytics
-- Crypto-market research
-- Telegram automation
-- Twitter/X automation
-- Browser automation
-- Live web search
-- Summarization
-- Trade-support workflows
+### 3. Private Desktop vs Cloud Deployment
 
-### Tier 3 — Synthesis and memory
+<p align="center">
+  <img
+    src="./media/sync-desktop-cloud-deployment.png"
+    width="100%"
+    alt="SYNC private desktop and cloud deployment architecture"
+  >
+</p>
 
-The final layer handled:
+The same application was delivered in two forms: a private Electron desktop build with a bundled React interface, local FastAPI backend, encrypted SQLite storage, and local vector database; and a cloud deployment using React, an AWS load balancer, ECS, PostgreSQL, and shared model services.
 
-- Result consolidation
-- Source-aware summaries
-- Response formatting
-- Conversation context
-- Retrieval of relevant prior interactions
-
-The backend combined FastAPI services, LangGraph state machines, custom tool registries, encrypted local storage, retrieval memory, scheduled workflows, cloud-hosted inference, and production monitoring.
+> Both deployment modes used the same core agent architecture and external integrations, with no microservices or API calls between agents.
 
 ---
 
